@@ -32,12 +32,21 @@
 
 	<?php 
 	include 'config.php';
-	$abfrage = "SELECT id FROM user_story ORDER BY id DESC LIMIT 0,1 "; 
-	echo $abfrage;
+	mysql_select_db(story_test);
+	$query = "SELECT usr_txt FROM user_story ORDER BY id DESC LIMIT 0,1";
+	$resultID = mysql_query($query);
+
+	while ($row = mysql_fetch_assoc($resultID)) {
+    $teile = explode(" ", $row["usr_txt"]);
+    $last = array_pop($teile);
+    
+}
+
+
 
 	?>
 
-	<div class="text">Der letzte Satz endete mit: <span id="info"><?php $abfrage ?></span></div>	
+	<div class="text">Der letzte Satz endete mit: <span id="info"><?php echo $last; ?></span></div>	
 
 	</div>
 
