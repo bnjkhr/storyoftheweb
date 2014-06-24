@@ -32,6 +32,13 @@ h2 {
 	text-align: left;
 }
 
+.login {
+	text-align: left;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 #info {
 	color: black;
 	font-weight: 700;
@@ -50,6 +57,28 @@ input[type="text"] {
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 300;
 	font-size: 20px;
+}
+
+input[name="user"] {
+	width: 49%;
+	height: 46px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+input[name="pw"] {
+	width: 49%;
+	height: 46px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+}
+
+.log_button {
+	width:100%;
+	height: 46px;
 }
 
 .button {
