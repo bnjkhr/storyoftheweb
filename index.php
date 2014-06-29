@@ -31,7 +31,7 @@
 		</script>
 
 	<?php 
-	include 'config.php';
+	require_once 'config.php';
 	mysql_select_db(story_test);
 	$query = "SELECT usr_txt FROM user_story ORDER BY id DESC LIMIT 0,1";
 	$resultID = mysql_query($query);
@@ -39,7 +39,6 @@
 	while ($row = mysql_fetch_assoc($resultID)) {
     $teile = explode(" ", $row["usr_txt"]);
     $last = array_pop($teile);
-    
 }
 
 
