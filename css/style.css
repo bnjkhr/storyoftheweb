@@ -59,23 +59,6 @@ input[type="text"] {
 	font-size: 20px;
 }
 
-input[name="user"] {
-	width: 49%;
-	height: 46px;
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: 300;
-	font-size: 20px;
-	margin-bottom: 10px;
-}
-
-input[name="pw"] {
-	width: 49%;
-	height: 46px;
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: 300;
-	font-size: 20px;
-}
-
 .log_button {
 	width:100%;
 	height: 46px;
@@ -126,4 +109,31 @@ input[name="pw"] {
 }.button:active {
 	position:relative;
 	top:1px;
+}
+
+@media only screen and (max-width: 480px) {
+	.viewport {
+		width: 95%;
+		font-size: 10px;
+	}
+	h1 {
+		font-size: 14px;
+	}
+
+	h2 {
+		font-size: 10px;
+	}
+
+	.text {
+		font-size: 8px;
+	}
+
+	input[type="text"] {
+	margin-top: 50px;
+	width: 100%;
+	height: 46px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	font-size: 10px;
+}
 }
